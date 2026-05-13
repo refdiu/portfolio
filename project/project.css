@@ -1,0 +1,149 @@
+@font-face {
+    font-family: comfont;
+    src: url("Graphite\ Std\ Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: last baseline;
+    flex-direction: row;
+    background-image: url("project.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-position: center;
+}
+
+#pan1{
+    display: flex;
+    padding: 1svh;
+    /* border: 20px solid white; */
+    min-height: 85vh;
+    max-height: 85vh;
+    min-width: 60vh;
+    max-width: 60vh;
+    align-items: first baseline;
+    justify-content: center;
+    align-content: center;
+    background-image: url("p1im.png");
+    background-size: cover;
+    animation: fadein 3s ease-in;
+    border: 3px solid black;
+}
+
+#pan2{
+    display: flex;
+    padding: 1svh;
+    /* border: 20px solid white; */
+    align-items: first baseline;
+    min-height: 85vh;
+    max-height: 85vh;
+    min-width: 60vh;
+    max-width: 60vh;
+    background-image: url("shell.png");
+    background-size: cover;
+    justify-content: center;
+    animation: fadein 3s ease-in 3s 1 normal backwards;
+    border: 3px solid black;
+}
+
+#pan3{
+    display: flex;
+    padding: 1svh;
+    /* border: 20px solid white; */
+    align-items: first baseline;
+    min-height: 85vh;
+    max-height: 85vh;
+    min-width: 60vh;
+    max-width: 60vh;
+    animation: fadein 3s ease-in 6s 1 normal backwards;
+    background-image: url("os.png");
+    background-size: cover;
+    justify-content: center;
+}
+
+#game{
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 1vh;
+    border: 2px solid black;
+    max-height: 10dvh;
+    background-color: rgb(183, 213, 202);
+    padding: 1vh;
+    color: black;
+    font-family: comfont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: large;
+    text-align: left;
+    word-wrap: break-word;
+    text-wrap: pretty;
+    animation:  duration timing-function delay iteration-count direction fill-mode;
+}
+
+#shell{
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 1vh;
+    border: 2px solid black;
+    min-width: 7dvh;
+    max-height: 7dvh;
+    background-color: rgb(183, 213, 202);
+    padding: 1vh;
+    color: black;
+    font-family: comfont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: large;
+    text-align: left;
+    word-wrap: break-word;
+    text-wrap: pretty;
+}
+
+#os{
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 1vh;
+    border: 2px solid black;
+    min-width: 7dvh;
+    max-height: 7dvh;
+    background-color: rgb(183, 213, 202);
+    padding: 1vh;
+    color: black;
+    font-family: comfont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: large;
+    text-align: left;
+    word-wrap: break-word;
+    text-wrap: pretty;
+}
+
+@keyframes fadein{
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes zoomin {
+    from{
+        min-width: 7dvh;
+        max-height: 7dvh;
+    }
+    to{
+        min-width: 8dvh;
+        max-height: 8dvh;
+    }
+}
