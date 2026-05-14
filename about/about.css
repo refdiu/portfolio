@@ -1,0 +1,24 @@
+@font-face {
+    font-family: comfont;
+    src: url("Graphite\ Std\ Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: last baseline;
+    flex-direction: row;
+    background-image: url("about.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-position: center;
+}
