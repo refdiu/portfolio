@@ -13,7 +13,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    align-content: last baseline;
+    align-content: center;
     flex-direction: row;
     background-image: url("about.png");
     background-repeat: no-repeat;
@@ -21,4 +21,61 @@ body{
     min-height: 100vh;
     max-height: 100vh;
     background-position: center;
+    /* border: 10px solid white; */
+}
+
+#pan{
+    border: 10px solid white;
+    min-height: 80dvh;
+    min-width: 150dvh;
+    max-width: 100dvh;
+    background-image: url("ame.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 1vh;
+    border: 2px solid black;
+    max-height: 10dvh;
+    /* background-color: rgb(183, 213, 202); */
+    padding: 1vh;
+    color: black;
+    font-family: comfont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: large;
+    text-align: left;
+    word-wrap: break-word;
+    text-wrap: pretty;
+    animation: fadein 3s ease-in 0s 1 normal backwards;
+}
+
+#minf{
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 1vh;
+    border: 2px solid black;
+    min-width: 7dvh;
+    max-height: 7dvh;
+    background-color: rgb(183, 213, 202);
+    padding: 1vh;
+    color: black;
+    font-family: comfont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: large;
+    text-align: left;
+    word-wrap: break-word;
+    text-wrap: pretty;
+}
+
+@keyframes fadein{
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
 }

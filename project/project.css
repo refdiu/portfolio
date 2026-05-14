@@ -87,7 +87,7 @@ body{
     text-align: left;
     word-wrap: break-word;
     text-wrap: pretty;
-    animation:  duration timing-function delay iteration-count direction fill-mode;
+    /* animation:  duration timing-function delay iteration-count direction fill-mode; */
 }
 
 #shell{
