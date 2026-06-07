@@ -33,7 +33,6 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     display: flex;
     /* flex-wrap: wrap; */
     margin: 1vh;
@@ -55,10 +54,13 @@ body{
 #minf{
     display: flex;
     /* flex-wrap: wrap; */
+    text-transform: uppercase;
     margin: 1vh;
     border: 2px solid black;
-    min-width: 7dvh;
-    max-height: 7dvh;
+    min-width: 10dvh;
+    max-width: 70dvh;
+    min-height: 2dvh;
+    max-height: 30dvh;
     background-color: rgb(183, 213, 202);
     padding: 1vh;
     color: black;
@@ -67,8 +69,9 @@ body{
     font-weight: 600;
     font-size: large;
     text-align: left;
-    word-wrap: break-word;
+    word-wrap: normal;
     text-wrap: pretty;
+    line-height: 3dvh;
 }
 
 @keyframes fadein{
