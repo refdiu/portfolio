@@ -1,0 +1,196 @@
+@font-face {
+    font-family: comfont;
+    src: url("Graphite\ Std\ Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: last baseline;
+    flex-direction: row;
+    background-image: url("project.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-position: center;
+}
+
+#pan1{
+    display: flex;
+    padding: 1svh;
+    /* border: 20px solid white; */
+    min-height: 85vh;
+    max-height: 85vh;
+    min-width: 60vh;
+    max-width: 60vh;
+    align-items: first baseline;
+    justify-content: center;
+    align-content: center;
+    background-image: url("p1im.png");
+    background-size: cover;
+    animation: fadein 3s ease-in;
+    border: 3px solid black;
+}
+
+#pan2{
+    display: flex;
+    padding: 1svh;
+    /* border: 20px solid white; */
+    align-items: first baseline;
+    min-height: 85vh;
+    max-height: 85vh;
+    min-width: 60vh;
+    max-width: 60vh;
+    background-image: url("shell.png");
+    background-size: cover;
+    justify-content: center;
+    animation: fadein 3s ease-in 3s 1 normal backwards;
+    border: 3px solid black;
+}
+
+#pan3{
+    display: flex;
+    padding: 1svh;
+    /* border: 20px solid white; */
+    align-items: first baseline;
+    min-height: 85vh;
+    max-height: 85vh;
+    min-width: 60vh;
+    max-width: 60vh;
+    animation: fadein 3s ease-in 6s 1 normal backwards;
+    background-image: url("os.png");
+    background-size: cover;
+    justify-content: center;
+}
+
+#comtext{
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 1vh;
+    border: 2px solid black;
+    min-width: 7dvh;
+    min-height: fit-content;
+    max-height: 7dvh;
+    background-color: rgba(183, 213, 202, 0.9);
+    padding: 1vh;
+    color: black;
+    font-family: comfont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: large;
+    text-align: left;
+    word-wrap: break-word;
+    text-wrap: pretty;
+}
+
+#modcomtext{
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 1vh;
+    border: 2px solid black;
+    width: 50%;
+    height: fit-content;
+    background-color: rgba(183, 213, 202, 0.9);
+    padding: 1vh;
+    color: black;
+    font-family: comfont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: large;
+    text-align: left;
+    word-wrap: break-word;
+    text-wrap: pretty;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  animation: modfade 0.3s step-end;
+}
+
+.para{
+    display: flex;
+    align-items: first baseline;
+    /* height: 50%; */
+}
+
+.modal-content {
+    display: flex;
+    background-image: url("modal_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5% auto;
+    padding: 3dvh;
+    border: 1px solid rgba(0, 0, 0, 0.081);
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: 80%;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    overflow: hidden;
+  /* animation: modfade 0.4s; */
+}
+
+#inim{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid white; */
+    max-height: 90%;
+    max-width: 90%;
+    padding: 6px;
+}
+
+#images{
+    display: flex;
+    /* border: 2px solid white; */
+    flex-direction: column;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding-left: 2dvh;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modfade{
+    0%   {width: 0%; height: 0%;}
+    33%   {width: 33%; height: 33%;}
+    66%   {width: 66%; height: 66%;}
+}
+
+@keyframes fadein{
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
