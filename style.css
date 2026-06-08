@@ -28,16 +28,18 @@ body{
 
 .techst{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     min-height: 30vh;
     max-height: 30vh;
-    min-width: 100vw;
+    min-width: fit-content;
+    word-wrap: normal;
     justify-content: center;
     font-family: mpfont;
     color: red;
     font-size: 5em;
     align-content: center;
+    text-align: center;
     /* border: 20px solid white; */
 }
 

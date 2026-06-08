@@ -33,8 +33,10 @@ body{
     justify-content: center;
     font-family: butfont;
     color: white;
+    text-align: center;
     font-size: 5em;
     align-content: center;
+    padding: 3px;
     /* border: 20px solid white; */
 }
 

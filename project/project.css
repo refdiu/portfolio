@@ -71,7 +71,7 @@ body{
     justify-content: center;
 }
 
-#comtext{
+.comtext{
     display: flex;
     /* flex-wrap: wrap; */
     margin: 1vh;
@@ -91,7 +91,7 @@ body{
     text-wrap: pretty;
 }
 
-#modcomtext{
+.modcomtext{
     display: flex;
     /* flex-wrap: wrap; */
     margin: 1vh;
@@ -121,7 +121,6 @@ body{
   overflow: hidden; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  animation: modfade 0.3s step-end;
 }
 
 .para{
@@ -144,23 +143,26 @@ body{
     align-items: stretch;
     justify-content: space-evenly;
     overflow: hidden;
-  /* animation: modfade 0.4s; */
+    animation: modfade 0.3s ease-in;
 }
 
-#inim{
+.inim{
     display: flex;
     flex-direction: column;
     /* border: 2px solid white; */
     max-height: 90%;
     max-width: 90%;
     padding: 6px;
+    overflow-wrap: anywhere;
 }
 
-#images{
+.images{
     display: flex;
     /* border: 2px solid white; */
     flex-direction: column;
     overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: red black;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -181,9 +183,12 @@ body{
 }
 
 @keyframes modfade{
-    0%   {width: 0%; height: 0%;}
-    33%   {width: 33%; height: 33%;}
-    66%   {width: 66%; height: 66%;}
+    from{
+        transform: scale(0.6);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 
 @keyframes fadein{

@@ -25,16 +25,15 @@ body{
 }
 
 #pan{
-    border: 10px solid white;
     min-height: 80dvh;
     min-width: 150dvh;
-    max-width: 100dvh;
+    max-width: 150dvh;
     background-image: url("ame.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-direction: column;
     margin: 1vh;
     border: 2px solid black;
     max-height: 10dvh;
@@ -49,30 +48,43 @@ body{
     word-wrap: break-word;
     text-wrap: pretty;
     animation: fadein 3s ease-in 0s 1 normal backwards;
+    /* border: 2px solid white; */
 }
 
 #minf{
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-direction: row;
     text-transform: uppercase;
     margin: 1vh;
     border: 2px solid black;
     min-width: 10dvh;
-    max-width: 70dvh;
-    min-height: 2dvh;
-    max-height: 30dvh;
+    max-height: 50%;
+    height: max-content;
     background-color: rgb(183, 213, 202);
     padding: 1vh;
     color: black;
     font-family: comfont;
     font-style: normal;
     font-weight: 600;
-    font-size: large;
+    font-size: small;
     text-align: left;
-    word-wrap: normal;
+    word-wrap: break-word;
     text-wrap: pretty;
     line-height: 3dvh;
+    align-items: stretch;
 }
+
+
+#image{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.9);
+    /* border: 2px solid white; */
+}
+
 
 @keyframes fadein{
     from {
